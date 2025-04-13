@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* Убедись, что URL изображения правильный и доступный */
+  background-image: url('https://storage.bankoboev.ru/full/1/wall21311.jpg');
+  /* Добавим свойства для управления фоном */
+  background-size: cover; /* Масштабировать для покрытия */
+  background-position: center center; /* Центрировать */
+  background-repeat: no-repeat; /* Не повторять */
+  background-attachment: fixed; /* Зафиксировать при прокрутке */
+  min-height: 100vh; /* Минимальная высота */
+
+  color: #eee; /* Основной цвет текста (светлый) */
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  /* Можно добавить легкий полупрозрачный фон для шапки, если нужно */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #f0a500; /* Золотой цвет заголовка */
+  /* Добавляем тень для читаемости */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+  /* Можно добавить тень и для навигации */
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); */
+}
+
+nav a:hover {
+  color: #f0a500;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto; /* Центрируем основной контент */
+   /* Можно добавить общий фон для основного контента, если текст плохо читается */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* border-radius: 8px; */ /* Если добавляем фон, можно скруглить углы */
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  font-size: 2em;
+  color: #f0a500;
+  /* Добавляем тень для читаемости */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #f0a500; /* Фон кнопки */
+  color: #111; /* Цвет текста кнопки (темный) */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #d98f00; /* Фон кнопки при наведении */
+}
+
+.news h2 {
+  color: #f0a500;
+  margin-bottom: 20px;
+   /* Добавляем тень для читаемости */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.news article {
+  /* !!! Изменено на полупрозрачный фон !!! */
+  background-color: rgba(30, 30, 30, 0.7); /* Полупрозрачный темно-серый фон */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #f0a500; /* Оставляем яркую границу слева */
+  border-radius: 5px; /* Оставляем скругление углов */
+}
+
+/* Дополнительно: Убедимся, что текст внутри .news article читаемый */
+.news article p { /* Предполагаем, что основной текст новости в параграфах */
+  color: #eee; /* Убеждаемся, что он светлый */
+  /* Можно добавить легкую тень, если фон очень светлый или сложный */
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+}
+
+footer {
+    position: fixed; /* Фиксируем положение относительно окна браузера */
+    bottom: 15px;    /* Отступ от нижнего края окна */
+    right: 15px;     /* Отступ от правого края окна */
+
+    /* --- Дополнительные стили для внешнего вида (можно настроить) --- */
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон, чтобы было видно */
+    color: #ccc;         /* Цвет текста */
+    padding: 8px 12px; /* Внутренние отступы для текста */
+    border-radius: 5px;  /* Слегка скруглим углы */
+    font-size: 0.85em;   /* Немного уменьшим шрифт */
+    z-index: 1000;       /* Устанавливаем высокий z-index, чтобы футер был поверх другого контента */
+
+    /* Убираем стили, которые могут мешать (если они были) */
+    width: auto;         /* Ширина будет по содержимому */
+    margin: 0;           /* Убираем внешние отступы */
+    text-align: right;   /* Выравниваем текст по правому краю (логично для правого угла) */
+}
